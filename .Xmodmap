@@ -1,0 +1,15 @@
+! fix keyboard for the us mac keyboard layout
+! fixes the keys ` and ~
+keycode 94 = grave asciitilde grave asciitilde dead_grave dead_horn
+keycode 49 = section plusminus section plusminus section plusminus
+
+! umlaut hack for an us keyboard layout
+keycode 66 = Mode_switch Multi_key
+! keycode 117 = Mode_switch Multi_key
+keycode 38 = a A adiaeresis Adiaeresis
+keycode 30 = u U udiaeresis Udiaeresis
+keycode 32 = o O odiaeresis Odiaeresis
+keycode 31 = i I idiaeresis Idiaeresis
+keycode 26 = e E egrave Egrave
+keycode 25 = w W eacute Eacute
+keycode 54 = c C ccedilla Ccedilla
