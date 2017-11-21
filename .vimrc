@@ -14,12 +14,13 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 "Plugin 'Valloric/YouCompleteMe'
 
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'dracula/vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-">>>End pf Vbundle stuff
+">>>End of Vbundle stuff
 
 
 " Personal customization
