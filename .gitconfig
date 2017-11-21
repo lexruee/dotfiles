@@ -3,3 +3,20 @@
 # Please adapt and uncomment the following lines:
 	name = Alexander Rüedlinger 
 	email = a.rueedlinger@gmail.com 
+[alias]
+	unstage = reset HEAD --
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	lg = log
+	pu = push
+	pl = pull
+	fe = fetch
+	me = merge
+	rb = rebase
+	re = reset
+	un = reset HEAD --
+	sh = show
+	ad = add
+	c = commit -s
