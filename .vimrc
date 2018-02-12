@@ -16,6 +16,7 @@ Plugin 'bling/vim-airline'
 
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'dracula/vim'
+Plugin 'zyedidia/vim-snake'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -45,3 +46,8 @@ filetype plugin indent on    " required
 :set colorcolumn=80
 :set background=dark
 :colorscheme dracula 
+
+:nnoremap <C-J> <C-W><C-J>
+:nnoremap <C-K> <C-W><C-K>
+:nnoremap <C-L> <C-W><C-L>
+:nnoremap <C-H> <C-W><C-H>
