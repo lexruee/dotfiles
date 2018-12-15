@@ -7,7 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="avit"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vagrant)
+plugins=(git vagrant django rails ruby rvm redis postgres archlinux tmux jira)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -92,10 +92,16 @@ zstyle ':completion:*' rehash true
 # ruby stuff
 export PATH="$PATH:$HOME/.gem/ruby/2.4.0/bin"
 
+# work
+alias rem='cd ~/Garaio/git/rem2'
+
 # some more ls aliases
 alias ls='ls --color=auto -h'
 alias ll='ls -l'
 alias la='ls -A'
+
+# ag alias
+alias ag='ag --pager "less -r"'
 
 # some *grep aliases
 alias grep='grep --color=auto'
@@ -109,7 +115,8 @@ alias yt-mp3='youtube-dl --extract-audio --audio-format=mp3'
 export EDITOR=vim
 
 # local installed stuff
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/bin:/opt/ethereum-wallet-mist"
+export PATH="$PATH:$HOME/.local/bin:/opt/Ellagem"
 
 # fix tilix
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
@@ -122,3 +129,8 @@ fi
 #fi
 
 neofetch
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
