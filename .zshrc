@@ -51,7 +51,7 @@ ZSH_THEME="avit"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vagrant django rails ruby rvm redis postgres archlinux tmux jira)
+plugins=(git vagrant django rails ruby rbenv rvm redis postgres archlinux tmux jira)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -131,6 +131,6 @@ fi
 neofetch
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+#export PATH="$PATH:$HOME/.rvm/bin"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
