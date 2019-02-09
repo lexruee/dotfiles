@@ -27,8 +27,11 @@ Plugin 'christoomey/vim-tmux-navigator'
 " Fun stuff
 Plugin 'zyedidia/vim-snake'
 
-" node
+" Node.js stuff
 Plugin 'moll/vim-node'
+
+" Scala stuff
+Plugin 'derekwyatt/vim-scala'
 
 " Useful stuff
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -38,6 +41,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'tpope/vim-eunuch'
+"
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
