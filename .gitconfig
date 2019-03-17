@@ -14,7 +14,8 @@
     ci = commit
     co = commit
     cm = commit -m
-    cma = commit --am
+    cme = commit --am
+    cma = commit --am --no-edit
     cms = commit -s -m
     st = status
     lg = log

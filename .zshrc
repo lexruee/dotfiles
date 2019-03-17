@@ -89,12 +89,6 @@ fi
 
 zstyle ':completion:*' rehash true
 
-# ruby stuff
-export PATH="$PATH:$HOME/.gem/ruby/2.4.0/bin"
-
-# work
-alias rem='cd ~/Garaio/git/rem2'
-
 # some more ls aliases
 alias ls='ls --color=auto -h'
 alias ll='ls -l'
@@ -115,8 +109,6 @@ alias yt-mp3='youtube-dl --extract-audio --audio-format=mp3'
 export EDITOR=vim
 
 # local installed stuff
-export PATH="$PATH:$HOME/.local/bin:/opt/ethereum-wallet-mist"
-export PATH="$PATH:$HOME/.local/bin:/opt/Ellagem"
 
 # fix tilix
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
@@ -134,3 +126,11 @@ neofetch
 #export PATH="$PATH:$HOME/.rvm/bin"
 
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+#
+# rbenv
+eval "$(rbenv init -)"
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash

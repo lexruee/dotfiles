@@ -33,6 +33,9 @@ Plugin 'moll/vim-node'
 " Scala stuff
 Plugin 'derekwyatt/vim-scala'
 
+" Elixir stuff
+Plugin 'elixir-editors/vim-elixir'
+
 " Useful stuff
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bogado/file-line'
@@ -130,3 +133,9 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Map Escape to a custom sequence of keystrokes
 ":inoremap jk <Esc>
+filetype plugin indent on
+:autocmd Filetype ruby set softtabstop=2
+:autocmd Filetype ruby set sw=2
+:autocmd Filetype ruby set ts=2
+
+:autocmd Filetype elixir set softtabstop=2
