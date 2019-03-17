@@ -3,8 +3,8 @@
 
 [user]
 # Please adapt and uncomment the following lines:
-	name = Alexander Rüedlinger 
-	email = a.rueedlinger@gmail.com 
+    name = Alexander Rüedlinger 
+    email = a.rueedlinger@gmail.com 
 [alias]
     unstage = reset HEAD --
     un = reset HEAD --
@@ -17,6 +17,7 @@
     cme = commit --am
     cma = commit --am --no-edit
     cms = commit -s -m
+    cp = cherry-pick
     st = status
     lg = log
     ll = log --oneline
@@ -28,6 +29,6 @@
     rb = rebase
     rbi = rebase -i
     re = reset
-	sh = show
+    sh = show
 [pager]
-	status = true
+    status = true
